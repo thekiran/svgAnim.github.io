@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .main{padding: 5vh 0 0 0vw;}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+    <!-- <svg width="380" height="611" viewBox="0 0 380 611" fill="none" id="mysvg" xmlns="http://www.w3.org/2000/svg">
+        <g>
+
+            <path id="fir" d="M378.5 498L218.5 402.5L191 418.5V609.5L378.5 498Z" fill="#9A16EB" stroke="#9A16EB" />
+        </g>
+        <g>
+            <path d="M190 418.5L1.5 306.5V498.5L190 610V418.5Z" fill="#1CC6A7" />
+
+        </g>
+        <g>
+            <path d="M1.5 306.5L190 418.5V610L1.5 498.5V306.264" stroke="#1CC6A7" />
+        </g>
+
+        <g>
+            <path d="M379 305.5L191 417L190.5 225.5L379 115V305.5Z" fill="#1CC6A7" stroke="#1CC6A7" />
+        </g>
+
+        <g>
+            <path d="M1 305.5L1.5 113.5L190 225.5V417.5L1 305.5Z" fill="#AE9191" stroke="#AE9191" />
+        </g>
+        <g>
+            <path d="M189.5 225L1.5 113.5L190 1L379 113.5L189.5 225Z" fill="#9A16EB" stroke="#9A16EB" />
+        </g>
+    </svg>
+         -->
+         <svg width="500" height="651" id="mysvg" viewBox="0 0 380 611" fill="none"" xmlns="http://www.w3.org/2000/svg">
+            <path id="fif" d="M378.5 498L218.5 402.5L191 418.5V609.5L378.5 498Z" fill="#9A16EB" stroke="#9A16EB"/>
+            <path id="fou" d="M190 418.5L1.5 306.5V498.5L190 610V418.5Z" stroke="#1CC6A7" fill="#1CC6A7"/>
+            <!-- <path id="fou" d="M1.5 306.5L190 418.5V610L1.5 498.5V306.264" fill="#1CC6A7" stroke="none"/> -->
+            <path id="thr" d="M379 305.5L191 417L190.5 225.5L379 115V305.5Z" fill="#1CC6A7" stroke="#1CC6A7"/>
+            <path id="sec" d="M1 305.5L1.5 113.5L190 225.5V417.5L1 305.5Z" fill="#AE9191" stroke="#AE9191"/>
+            <path id="fir" d="M189.5 225L1.5 113.5L190 1L379 113.5L189.5 225Z" fill="#9A16EB" stroke="#9A16EB"/>
+        </svg>
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script>
+                gsap.from("#fir",{x:50,y:-100,scale:0,duration:1.5,delay:2,ease:"bounce"})
+                gsap.from("#sec",{x:-100,scale:0,duration:1,delay:1,ease:"back"})
+                gsap.from("#thr",{x:200,opacity:0,scale:0,duration:.75,rotate:'-360deg',delay:.5,ease:"slow"})
+                // gsap.from("#thr",{x:-100,opacity:0,duration:2,rotate:'0deg'})
+                // gsap.from("#fou",{x:-100,opacity:0,duration:2,rotate:'0deg'})
+                gsap.from("#fou",{x:-200,opacity:0,duration:.75,rotate:'0deg'})
+                gsap.from("#fif",{y:100,scale:0,duration:.75})
+
+
+    </script>
+</body>
+
+</html>
